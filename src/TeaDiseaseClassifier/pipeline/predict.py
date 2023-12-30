@@ -29,15 +29,14 @@ class PredictionPipeline:
             prediction = 'brown_blight'
             return [{ "The following leaf is affected by" : prediction}]
         elif result[0] == 3:
-            prediction = 'healthy'
+            prediction = 'gray_blight'
             return [{ "The following leaf is " : prediction}]
         elif result[0] == 4:
-            prediction = 'helopeltis'
+            prediction = 'healthy'
             return [{ "The following leaf is affected by" : prediction}]
         elif result[0] == 5:
-            prediction = 'red_spot'
+            prediction = 'helopeltis'
             return [{ "The following leaf is affected by" : prediction}]
-        
         else:
-            prediction = 'gray_blight'
+            prediction = 'red_spot'
             return [{ "The following leaf is affected by" : prediction}]
